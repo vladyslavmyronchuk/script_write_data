@@ -27,7 +27,7 @@ def main():
                     continue
                 print("Отримано:", line)
 
-                # Перевірка, чи це JSON
+              
                 if line.startswith("{") and line.endswith("}"):
                     data = json.loads(line)
                     if data.get("errorFlags") == 0:
